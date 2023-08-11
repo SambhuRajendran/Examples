@@ -9,6 +9,4 @@ for i in number:
 
 for i in numbers:
     for j in range(1, until+1):
-        print(f'{i} multiplied by {j} is: ',i*j)
-
-
+        print(f'{i} X {j} = ',i*j)
