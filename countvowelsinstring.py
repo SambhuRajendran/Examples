@@ -1,8 +1,4 @@
 word = input('Enter a word to calculate number of vowels: ')
-
-print(len(word))
-#print(word[0])
-
 count = 0
 i=0
 
