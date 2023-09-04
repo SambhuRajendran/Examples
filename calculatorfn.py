@@ -25,16 +25,19 @@ def multiplication():
         print('Please enter a valid number. Try Again.')
 
 def main():
-  print('Hello, Welcome to the calculator program')
-  print('Press "1" for Addition, "2" for Multiplicaton')
-  try:
-    userinput = int(input('What action you want to perform: '))
-    if userinput == 1:
-      addition()
-    elif userinput == 2:
-      multiplication()
-  except ValueError:
-    print("Please give a valid input. Try Again. Thanks!")
+  while True: 
+    print('Hello, Welcome to the calculator program')
+    print('Press "1" for Addition, "2" for Multiplicaton, "y/Y to exit" ')
+    try:
+      userinput = int(input('What action you want to perform: '))
+      if userinput == 1:
+        addition()
+      elif userinput == 2:
+        multiplication()
+      elif userinput == "y":
+         exit
+    except ValueError:
+      print("Please give a valid input. Try Again. Thanks!")
 
 if __name__ == "__main__":
    main()
