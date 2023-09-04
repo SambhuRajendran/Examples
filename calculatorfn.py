@@ -27,15 +27,15 @@ def multiplication():
 def main():
   while True: 
     print('Hello, Welcome to the calculator program')
-    print('Press "1" for Addition, "2" for Multiplicaton, "y/Y to exit" ')
+    print('Press "1" for Addition, "2" for Multiplicaton, "3" to exit" ')
     try:
       userinput = int(input('What action you want to perform: '))
       if userinput == 1:
         addition()
       elif userinput == 2:
         multiplication()
-      elif userinput == "y":
-         exit
+      elif userinput == 3:
+         exit()
     except ValueError:
       print("Please give a valid input. Try Again. Thanks!")
 
